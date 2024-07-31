@@ -7,11 +7,11 @@ use Illuminate\Http\Request;
 
 class MainController extends Controller
 {
-    public function index(int $weight_s) 
+    public function index() 
     {
         return view('Main');
         {
-            $title_id = readline();
+           /* $title_id = readline();
             $approach = [];
             $repetition = [];
             $weight = [];
@@ -215,7 +215,7 @@ class MainController extends Controller
                 echo $title_id . ' ' . $approach[1] . ' ' . $repetition[1] . ' ' . $weight[1] . "\n";
                 echo $title_id . ' ' . $approach[2] . ' ' . $repetition[2] . ' ' . $weight[2] . "\n";
                 echo $title_id . ' ' . $approach[3] . ' ' . $repetition[3] . ' ' . $weight[3] . "\n";
-            }
+            }*/
         }
     }
 }

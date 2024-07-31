@@ -23,4 +23,4 @@ Route::post('/contacts', 'App\Http\Controllers\ContactController@store')->name('
 Route::get('/programs', 'App\Http\Controllers\ProgramController@index')->name('program.index');
 Route::post('/programs', 'App\Http\Controllers\ProgramController@store')->name('program.store');
 
-Route::get('/schedule', 'App\Http\Controllers\ScheduleController@index')->name('schedule.index');
+Route::get('/records', 'App\Http\Controllers\RecordController@index')->name('record.index');
