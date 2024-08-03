@@ -16,7 +16,7 @@
     <a class="nav-link" href="{{ route('program.index') }}">Программа</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="{{ route('record.index') }}">Расписание</a>
+    <a class="nav-link" href="{{ route('record.index') }}">Рекорды</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="{{ route('contact.index') }}">Контакты</a>

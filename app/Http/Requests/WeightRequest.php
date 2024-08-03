@@ -22,7 +22,8 @@ class WeightRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'weight_max' => 'integer'
+            'weight_max' => 'integer',
+            'title_id' => 'integer'
         ];
     }
 }

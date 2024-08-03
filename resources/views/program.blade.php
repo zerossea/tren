@@ -40,10 +40,7 @@
       <th scope="col">Подход</th>
       <th scope="col">Повторений</th>
       <th scope="col">Вес</th>
-      <th scope="col">Выполнение</th>
       <th scope="col">Номер упражнения</th>
-      <th scope="col">Сделал повторений</th>
-      <th scope="col">Сделал вес</th>
     </tr>
   </thead>
   <tbody>

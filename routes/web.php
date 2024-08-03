@@ -24,3 +24,6 @@ Route::get('/programs', 'App\Http\Controllers\ProgramController@index')->name('p
 Route::post('/programs', 'App\Http\Controllers\ProgramController@store')->name('program.store');
 
 Route::get('/records', 'App\Http\Controllers\RecordController@index')->name('record.index');
+Route::get('/records/{list_s}', 'App\Http\Controllers\RecordController@show')->name('record.show');
+Route::get('/records/{list_s}/edit', 'App\Http\Controllers\RecordController@edit')->name('record.edit');
+Route::patch('/records/{list_s}', 'App\Http\Controllers\RecordController@update')->name('record.update');

@@ -17,11 +17,11 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
             $this->call([
-                WeightSeeder::class,
                 ExerciseSeeder::class,
                 TrenerSeeder::class,
                 FormulaSeeder::class,
                 TrainingNumberSeeder::class,
+                WeightSeeder::class,
             ]);
 
         User::factory()->create([
