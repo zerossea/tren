@@ -14,9 +14,9 @@ class RecordController extends Controller
     {
         $list_s = Weight::all();
         $lists = DB::table('exercises')
-                 ->join('weights', 'exercises.id', 'weights.title_id')
-                 ->select('exercises.*', 'weights.weight_max')
-                 ->get();
+            ->join('weights', 'exercises.id', 'weights.title_id')
+            ->select('exercises.*', 'weights.weight_max')
+            ->get();
         return view('record.index', compact('lists'));
     }
 
@@ -32,8 +32,8 @@ class RecordController extends Controller
 
     public function update(WeightRequest $request, Weight $list_s)
     {
-       $data = $request->validated();
-       $list_s->update($data);
-       return redirect()->route('record.show', $list_s->id);  
+        $data = $request->validated();
+        $list_s->update($data);
+        return redirect()->route('record.show', $list_s->id);
     }
 }

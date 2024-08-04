@@ -9,5 +9,5 @@ class formula extends Model
 {
     use HasFactory;
     protected $table = 'formulas';
-    protected $guarded =[];
+    protected $guarded = [];
 }

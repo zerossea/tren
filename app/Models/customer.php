@@ -9,5 +9,5 @@ class customer extends Model
 {
     use HasFactory;
     protected $table = 'customers';
-    protected $guarded =[];
+    protected $guarded = [];
 }

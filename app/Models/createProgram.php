@@ -9,5 +9,5 @@ class CreateProgram extends Model
 {
     use HasFactory;
     protected $table = 'create_programs';
-    protected $guarded =[];
+    protected $guarded = [];
 }

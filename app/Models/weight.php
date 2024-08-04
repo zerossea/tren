@@ -9,5 +9,5 @@ class weight extends Model
 {
     use HasFactory;
     protected $table = 'weights';
-    protected $guarded =[];
+    protected $guarded = [];
 }

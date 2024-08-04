@@ -8,7 +8,7 @@ use \App\Http\Requests\ListRequest;
 
 class ListController extends Controller
 {
-    public function index() 
+    public function index()
     {
         $list = Exercise::all();
         return view('list.index', compact('list'));
@@ -23,7 +23,7 @@ class ListController extends Controller
     {
         $data = $request->validated();
         Exercise::create($data);
-        return redirect()->route('list.index');    
+        return redirect()->route('list.index');
     }
 
     public function show(Exercise $list)
@@ -38,9 +38,9 @@ class ListController extends Controller
 
     public function update(ListRequest $request, Exercise $list)
     {
-       $data = $request->validated();
-       $list->update($data);
-       return redirect() ->route('list.show', $list->id);  
+        $data = $request->validated();
+        $list->update($data);
+        return redirect()->route('list.show', $list->id);
     }
 
     public function destroy(Exercise $list)

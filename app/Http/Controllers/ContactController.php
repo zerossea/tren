@@ -9,12 +9,12 @@ use \App\Http\Requests\ContactRequest;
 
 class ContactController extends Controller
 {
-    public function index() 
+    public function index()
     {
         $contacts = Customer::all();
         return view('contact.index', compact('contacts'));
     }
-    
+
     public function create()
     {
         $treners = Trener::all();
@@ -25,6 +25,6 @@ class ContactController extends Controller
     {
         $data = $request->validated();
         Customer::create($data);
-        return redirect()->route('contact.index');    
+        return redirect()->route('contact.index');
     }
 }
