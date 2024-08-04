@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class ProgramRequest extends FormRequest
+class CreateProgramRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,10 +24,8 @@ class ProgramRequest extends FormRequest
         return [
             'title_id' => 'integer',
             'training_number_id' => 'integer',
-            'formula_id'  => 'integer',
-            'approach' => 'integer',
-            'repetition' => 'integer',
-            'weight' => 'integer',
+            'formula_id' => 'integer',
+            'weight_max' => 'integer',
         ];
     }
 }

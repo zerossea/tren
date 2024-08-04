@@ -8,7 +8,7 @@
     <a class="nav-link" href="{{ route('record.index') }}">Вернуться</a>
   </li>
   <li class="nav-item ">
-    <a class="nav-link" href="{{ route('record.edit', $list_s->id) }}">Обновить упражнение</a>
+    <a class="nav-link" href="{{ route('record.edit', $list_s->id) }}">Обновить максимальный вес</a>
   </li>
 </ul>
 @endsection

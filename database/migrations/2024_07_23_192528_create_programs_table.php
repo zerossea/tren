@@ -17,7 +17,6 @@ return new class extends Migration
             $table->integer('approach');
             $table->integer('repetition');
             $table->integer('weight');
-            $table->string('data');
             $table->unsignedBigInteger('training_number_id')->nullable();
             $table->unsignedBigInteger('formula_id')->nullable();
             $table->timestamps('');

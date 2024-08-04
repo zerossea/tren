@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('weights', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('title_id')->nullable();
-            $table->float("weight_max");
+            $table->integer("weight_max");
             $table->timestamps();
 
             $table->index('title_id', 'weight_title_idx');
