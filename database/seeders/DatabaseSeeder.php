@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
                 TrenerSeeder::class,
                 FormulaSeeder::class,
                 TrainingNumberSeeder::class,
-                WeightSeeder::class,
+                WeightSeeder::class
             ]);
 
         User::factory()->create([

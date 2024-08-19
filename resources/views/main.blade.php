@@ -15,7 +15,7 @@
         @foreach($table_programs as $table_program)
         <tr>
             <td>{{ $table_program->id}}</td>
-            <td>{{ $table_program->title_id}}</td>
+            <td>{{ $table_program->title}}</td>
             <td>{{ $table_program->approach}}</td>
             <td>{{ $table_program->repetition}}</td>
             <td>{{ $table_program->weight}}</td>
